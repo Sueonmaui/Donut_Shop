@@ -1,8 +1,35 @@
-body {
+h1 {
+font-family: 'Indie Flower', cursive;
+}
+
+table{
+  background-color: rgb(255,161,147);
+}
+
+
+hr.line{
+  height: 30px;
+  border-style: solid;
+  border-color: black;
+  border-width: 10px 0 0 0;
+  border-radius: 20px;
+}
+
+body{
+  border-style: solid;
+}
+
+
+
+
+
+
+/*body {
   font-family: sans-serif;
   font-size: 10pt;
   color: rgb( 20, 20, 20 );
 }
+
 
 table {
   border: 1px solid lightblue;
@@ -10,7 +37,7 @@ table {
   border-collapse: collapse;
 }
 
-tr {
+tr{
   height: 40px;
 }
 
@@ -19,11 +46,11 @@ th, td {
 }
 
 tr:nth-child(even) {
-  background-color: lightsteelblue;
+  background-color: rgb(28,158,255);
 }
 
-#main-table tr:not(:nth-child(1)):hover {
-  background-color: steelblue;
+#main-table tr:nth-child(odd){
+  background-color: rgb(21,255,178);
   color: white;
   cursor: pointer;
 }
@@ -33,11 +60,11 @@ tr:nth-child(even) {
 }
 
 
-#main-table th:nth-child(2), #main-table td:nth-child(2) {
+#main-table th:nth-child(odd), #main-table td:nth-child(2) {
   text-align: center;
 }
 
-#main-table th:nth-child(3), #main-table td:nth-child(3) {
+#main-table th:nth-child(even), #main-table td:nth-child(3) {
   text-align: right;
 }
 
@@ -49,3 +76,7 @@ tr:nth-child(even) {
 .hours-detail th, .hours-detail td {
   text-align: right;
 }
+
+tbody:first-child{
+  background-color:red;
+}*/
