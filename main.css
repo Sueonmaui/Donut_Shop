@@ -1,0 +1,51 @@
+body {
+  font-family: sans-serif;
+  font-size: 10pt;
+  color: rgb( 20, 20, 20 );
+}
+
+table {
+  border: 1px solid lightblue;
+  padding: 10px;
+  border-collapse: collapse;
+}
+
+tr {
+  height: 40px;
+}
+
+th, td {
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: lightsteelblue;
+}
+
+#main-table tr:not(:nth-child(1)):hover {
+  background-color: steelblue;
+  color: white;
+  cursor: pointer;
+}
+
+#main-table {
+  width: 400px;
+}
+
+
+#main-table th:nth-child(2), #main-table td:nth-child(2) {
+  text-align: center;
+}
+
+#main-table th:nth-child(3), #main-table td:nth-child(3) {
+  text-align: right;
+}
+
+
+.hours-detail {
+  width: 400px;
+}
+
+.hours-detail th, .hours-detail td {
+  text-align: right;
+}
