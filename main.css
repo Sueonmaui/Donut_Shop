@@ -1,5 +1,6 @@
 h1 {
 font-family: 'Indie Flower', cursive;
+font-size: 40pt;
 background-color: hsla(0,0%,50%,0.5);
 text-shadow: 1px 1px 0px #987979;
 text-align: center;
@@ -7,6 +8,7 @@ color: #5E371C;
 }
 
 #main-table{
+  position: static;
   background-color: #DF8196;
   text-align: center;
   margin: 0 auto 0 auto;
@@ -25,6 +27,7 @@ hr.line{
 }
 
 body{
+  width: 95%;
   border-style: solid;
   font-family: 'Indie Flower', cursive;
   text-align: center;
