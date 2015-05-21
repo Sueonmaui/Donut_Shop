@@ -1,82 +1,77 @@
 h1 {
 font-family: 'Indie Flower', cursive;
+background-color: hsla(0,0%,50%,0.5);
+text-shadow: 1px 1px 0px #987979;
+text-align: center;
+color: #5E371C;
 }
 
-table{
-  background-color: rgb(255,161,147);
+#main-table{
+  background-color: #DF8196;
+  text-align: center;
+  margin: 0 auto 0 auto;
+  border: 5px solid #5E371C;
+  padding:2px;
+  width: 640px;
+  border-radius: 10px;
 }
-
 
 hr.line{
   height: 30px;
   border-style: solid;
-  border-color: black;
+  border-color: #5E371C;
   border-width: 10px 0 0 0;
   border-radius: 20px;
 }
 
 body{
   border-style: solid;
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+  background-image:url("images/colorful-donut-border-28618619.jpg")
 }
 
-
-
-
-
-
-/*body {
-  font-family: sans-serif;
-  font-size: 10pt;
-  color: rgb( 20, 20, 20 );
+*/th, td {
+  padding: 2px;
 }
 
-
-table {
-  border: 1px solid lightblue;
-  padding: 10px;
-  border-collapse: collapse;
-}
-
-tr{
-  height: 40px;
-}
-
-th, td {
-  padding: 10px;
-}
-
-tr:nth-child(even) {
-  background-color: rgb(28,158,255);
+*/tr:nth-child(even) {
+  background-color: #DF8196;
 }
 
 #main-table tr:nth-child(odd){
-  background-color: rgb(21,255,178);
+  background-color: #5E371C;
   color: white;
   cursor: pointer;
+  width: 640px;
 }
-
-#main-table {
-  width: 400px;
-}
-
 
 #main-table th:nth-child(odd), #main-table td:nth-child(2) {
   text-align: center;
 }
 
 #main-table th:nth-child(even), #main-table td:nth-child(3) {
-  text-align: right;
+  text-align: center;
 }
 
-
 .hours-detail {
-  width: 400px;
+  width: 600px;
 }
 
 .hours-detail th, .hours-detail td {
-  text-align: right;
+  text-align: center;
 }
+#Add {font-size: 15pt;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 0px #987979;
+  background-color: #5E371C;
 
-tbody:first-child{
-  background-color:red;
-}*/
+}
+p{
+  font-size: 15pt;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 0px #987979;
+  background-color: #5E371C;
+}
