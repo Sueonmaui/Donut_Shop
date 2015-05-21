@@ -71,6 +71,19 @@ tableInit = function(open, close) {
     }
     tableHead.appendChild(row);
   }
+//capturing the data from the input buttons
+
+ document.getElementById('submit').addEventListener('click', function(e) { //when user submits forms
+  var location=document.getElementById("location").value; //store elements
+  var minCustPH=document.getElementById("minCustPH").value;
+  var maxCustPH=document.getElementById("maxCustPH").value;
+  var avgDonPC=document.getElementById("avgDonPC").value;
+
+  var newLocation = new StoreLocation(minCustPH, maxCustPH,avgDonPC);
+  newLocation.custPerHour(newLocation.minCustPerHour, newLocation.maxCustPerHour);
+  newLocation.dailyDonuts(open, close);
+  newLocation.render(location);
+ });
 
   //Initialize the table and shop locations. call the method to calculate donuts per day called to create the estimates and then the renders is called to print them to the table
 
