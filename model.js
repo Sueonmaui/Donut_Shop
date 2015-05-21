@@ -56,9 +56,9 @@ tableInit = function(open, close) {
     for(var j = 0; j < close - open; j++) {
       var time = (j + open + 1);
       if (time <= 12){
-        tableValues[j] = time + ':00am ';
+        tableValues[j] = time + '-am ';
       } else {
-        tableValues[j] = (time - 12) + ':00pm';
+        tableValues[j] = (time - 12) + '-pm';
       }
     }
     tableValues.unshift(' ');
@@ -79,27 +79,27 @@ tableInit = function(open, close) {
   downtown = new StoreLocation(8, 43, 4.50);
   downtown.custPerHour(downtown.minCustPerHour, downtown.maxCustPerHour);
   downtown.dailyDonuts(open, close);
-  downtown.render("Downtown");
+  downtown.render("Downtown ");
 
   capitolHill = new StoreLocation(4, 37, 2.00);
   capitolHill.custPerHour(capitolHill.minCustPerHour, capitolHill.maxCustPerHour);
   capitolHill.dailyDonuts(open, close);
-  capitolHill.render("Capitol Hill");
+  capitolHill.render("Capitol Hill ");
 
   southLake = new StoreLocation(9, 23, 6.33);
   southLake.custPerHour(southLake.minCustPerHour, southLake.maxCustPerHour);
   southLake.dailyDonuts(open, close);
-  southLake.render("South Lake");
+  southLake.render("South Lake Union ");
 
   wedgewood = new StoreLocation(2, 28, 1.25);
   wedgewood.custPerHour(wedgewood.minCustPerHour, wedgewood.maxCustPerHour);
   wedgewood.dailyDonuts(open, close);
-  wedgewood.render("Wedgewood");
+  wedgewood.render("Wedgewood ");
 
   ballard = new StoreLocation(8, 58, 3.75);
   ballard.custPerHour(ballard.minCustPerHour, ballard.maxCustPerHour);
   ballard.dailyDonuts(open, close);
-  ballard.render("Ballard");
+  ballard.render("Ballard ");
 })();
 
 
