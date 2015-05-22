@@ -61,6 +61,7 @@ h2 {
   text-shadow: 1px 1px 0px #987979;
 }
 #main-table{
+  position: static;
   background-color: #DF8196;
   text-align: center;
   margin: 0 auto 0 auto;
@@ -77,7 +78,6 @@ hr.line{
   border-width: 10px 0 0 0;
   border-radius: 20px;
 }
-
 
 
 th, td {
@@ -110,7 +110,7 @@ tr:nth-child(even) {
 .hours-detail th, .hours-detail td {
   text-align: center;
 }
-#Add {font-size: 15pt;
+#add {font-size: 15pt;
   text-align: center;
   color: white;
   text-shadow: 1px 1px 0px #987979;
