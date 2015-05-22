@@ -1,0 +1,12 @@
+/* This is the animation code. */
+}
+.stage:hover .ball {
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
+}
+.stage:active .ball {
+  animation-play-state: paused;
+}

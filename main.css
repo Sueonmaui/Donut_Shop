@@ -1,11 +1,65 @@
-h1 {
-font-family: 'Indie Flower', cursive;
-background-color: hsla(0,0%,50%,0.5);
-text-shadow: 1px 1px 0px #987979;
-text-align: center;
-color: #5E371C;
+body{
+  border-style: solid;
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+  background-image:url("images/background-donuts2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+@keyframes slide {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  50% {
+    left: 244px;
+    top: 100px;
+  }
+  100% {
+    left: 488px;
+    top: 0;
+  }
+}
+.stage {
+  border-radius: 6px;
+  height: 82px;
+  position: relative;
+  min-width: 488px;
+}
+.stage:hover .ball {
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: .5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.stage:active .ball {
+  animation-play-state: paused;
+}
+.ball {
+  background-image: url("images/singled.jpg");
+  border-radius: 50%;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+}
+
+h1 {
+font-family: 'Indie Flower', cursive;
+font-size: 40pt;
+background-color: hsla(28, 78%, 40%, 0.5);
+text-shadow: 4px 3px 0px #987979;
+text-align: center;
+color: #5E371C;
+width: 58%;
+border-radius: 10px;
+}
+h2 {
+  color: #5E371C;
+  text-shadow: 1px 1px 0px #987979;
+}
 #main-table{
   background-color: #DF8196;
   text-align: center;
@@ -24,18 +78,13 @@ hr.line{
   border-radius: 20px;
 }
 
-body{
-  border-style: solid;
-  font-family: 'Indie Flower', cursive;
-  text-align: center;
-  background-image:url("images/colorful-donut-border-28618619.jpg")
-}
 
-*/th, td {
+
+th, td {
   padding: 2px;
 }
 
-*/tr:nth-child(even) {
+tr:nth-child(even) {
   background-color: #DF8196;
 }
 
@@ -65,7 +114,11 @@ body{
   text-align: center;
   color: white;
   text-shadow: 1px 1px 0px #987979;
+  background-position: 50% 50%;
   background-color: #5E371C;
+  width: 58%;
+  margin: 0 auto;
+  border-radius: 10px;
 
 }
 p{
